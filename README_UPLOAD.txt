@@ -1,11 +1,26 @@
-CAMT — THREE MODULE UPDATE TEST
+CAMT MODULE REPOSITORY 1.2 - GITHUB UPLOAD
 
-1. Import the three v1.0.0 modules manually through CAMT Module Manager.
-2. Upload the CONTENTS of this kit to the root of https://github.com/agebrander-def/CAMT-Updates on branch main.
-3. Replace modules.json with the included catalog.
-4. Upload the included files under modules/ and release-notes/.
-5. Open CAMT Update Manager -> Module-updates.
-6. It should show exactly three new updates: 1.0.0 -> 1.0.1 (assuming Update Manager 1.1.1 is already installed).
-7. Update each module separately and close/reopen that module after installation.
+Repository:
+https://github.com/agebrander-def/CAMT-Updates
 
-No CAMT.exe, PyInstaller or Inno rebuild is required.
+Upload/replace the CONTENTS of this kit in the repository root:
+
+modules.json
+modules/
+release-notes/
+
+IMPORTANT
+The supplied modules.json deliberately still uses schema CAMT.ModuleUpdateCatalog.1.
+That lets an already installed CAMT Update Manager 1.1.1 see and install its own 1.2.0 update.
+After 1.2.0 is loaded, the same catalog is treated as a full Module Repository and the three modules that are not installed appear under Available.
+
+TEST FLOW
+1. Upload this kit and commit to main.
+2. In existing Update Manager 1.1.1: Module updates -> Check modules.
+3. Update CAMT Update Manager 1.1.1 -> 1.2.0.
+4. Close and reopen CAMT Update Manager.
+5. Open Module Repository.
+6. The three new modules should appear under Available even when no base version is installed.
+7. Install one or more directly from the repository.
+
+No PyInstaller or CAMT.exe rebuild is required.
