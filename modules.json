@@ -1,0 +1,23 @@
+{
+  "schema": "CAMT.ModuleUpdateCatalog.1",
+  "channel": "Beta",
+  "generated": "2026-08-24T14:40:00+02:00",
+  "repository": "https://github.com/agebrander-def/CAMT-Updates",
+  "modules": [
+    {
+      "package_id": "camt.core.update_manager",
+      "name": "CAMT Update Manager",
+      "channel": "Beta",
+      "version": "1.1.1",
+      "download_url": "https://raw.githubusercontent.com/agebrander-def/CAMT-Updates/main/modules/CAMT_Update_Manager_v1_1_1.camtmodule",
+      "sha256": "38d1600a23db4628997acfce1cb037f8757cbb32bf4014a566defb6006b36380",
+      "release_notes_url": "https://github.com/agebrander-def/CAMT-Updates/blob/main/release-notes/update-manager-1.1.1.md",
+      "release_notes": "Independent .camtmodule self-update validation build. No CAMT.exe download required."
+    }
+  ],
+  "signing": {
+    "algorithm": "ed25519",
+    "key_id": "",
+    "signature": ""
+  }
+}
