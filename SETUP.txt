@@ -1,0 +1,16 @@
+CAMT-Updates GitHub starter
+===========================
+
+1. Copy the CONTENTS of this folder into repository:
+   https://github.com/agebrander-def/CAMT-Updates
+2. Commit and push to branch main.
+3. Initially update.json contains no download URL, so CAMT will report the repository but not install anything.
+4. When a new CAMT installer is ready, create a GitHub Release and upload the installer.
+5. Run tools/prepare_release.py to set version/build/download URL and SHA-256.
+6. Commit the new update.json.
+
+Signing:
+- Run tools/generate_signing_key.py once on a trusted machine.
+- NEVER commit CAMT_UPDATE_PRIVATE_KEY.pem.
+- Import CAMT_UPDATE_PUBLIC_KEY.pem into Update Manager on each beta test machine.
+- Current CAMT runtime must contain Python cryptography for Ed25519 verification.
