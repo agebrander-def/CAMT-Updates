@@ -1,7 +1,7 @@
 {
   "schema": "CAMT.ModuleUpdateCatalog.1",
   "channel": "Beta",
-  "generated": "2026-08-24T14:40:00+02:00",
+  "generated": "2026-08-24T14:55:00+02:00",
   "repository": "https://github.com/agebrander-def/CAMT-Updates",
   "modules": [
     {
@@ -12,7 +12,37 @@
       "download_url": "https://raw.githubusercontent.com/agebrander-def/CAMT-Updates/main/modules/CAMT_Update_Manager_v1_1_1.camtmodule",
       "sha256": "38d1600a23db4628997acfce1cb037f8757cbb32bf4014a566defb6006b36380",
       "release_notes_url": "https://github.com/agebrander-def/CAMT-Updates/blob/main/release-notes/update-manager-1.1.1.md",
-      "release_notes": "Independent .camtmodule self-update validation build. No CAMT.exe download required."
+      "release_notes": "Current independent module-update manager build."
+    },
+    {
+      "package_id": "camt.evidence.integrity",
+      "name": "CAMT Evidence Integrity",
+      "channel": "Beta",
+      "version": "1.0.1",
+      "download_url": "https://raw.githubusercontent.com/agebrander-def/CAMT-Updates/main/modules/CAMT_Evidence_Integrity_v1_0_1.camtmodule",
+      "sha256": "0eec817cf99d681fe83517730d507b106969b5ca71e06a712e6c7062bbf25a19",
+      "release_notes_url": "https://github.com/agebrander-def/CAMT-Updates/blob/main/release-notes/evidence-integrity-1.0.1.md",
+      "release_notes": "Adds explicit re-verification states, current hash tracking and CSV manifest export."
+    },
+    {
+      "package_id": "camt.log.timeline_explorer",
+      "name": "CAMT Log Timeline Explorer",
+      "channel": "Beta",
+      "version": "1.0.1",
+      "download_url": "https://raw.githubusercontent.com/agebrander-def/CAMT-Updates/main/modules/CAMT_Log_Timeline_Explorer_v1_0_1.camtmodule",
+      "sha256": "7a9364e9b85d0faf02a8a2b23a06b27ad0a4350076cbf668f417e6ab02e6489c",
+      "release_notes_url": "https://github.com/agebrander-def/CAMT-Updates/blob/main/release-notes/log-timeline_explorer-1.0.1.md",
+      "release_notes": "Adds severity filtering and top-source statistics to the normalized timeline."
+    },
+    {
+      "package_id": "camt.netmap.baseline_comparator",
+      "name": "CAMT NetMap Baseline Comparator",
+      "channel": "Beta",
+      "version": "1.0.1",
+      "download_url": "https://raw.githubusercontent.com/agebrander-def/CAMT-Updates/main/modules/CAMT_NetMap_Baseline_Comparator_v1_0_1.camtmodule",
+      "sha256": "91a0b92252f97ef267e848ca425c00ff18137b72d30ae55a4850c58683071041",
+      "release_notes_url": "https://github.com/agebrander-def/CAMT-Updates/blob/main/release-notes/netmap-baseline_comparator-1.0.1.md",
+      "release_notes": "Adds service/vulnerability delta detection and detailed JSON diff export."
     }
   ],
   "signing": {
