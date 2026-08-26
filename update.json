@@ -1,20 +1,11 @@
 {
   "schema": "CAMT.UpdateManifest.1",
   "product": "CAMT",
-  "edition": "Professional Edition",
   "channel": "Beta",
-  "version": "1.1.0 Beta 1",
-  "build": "110B1-RCF-20260824",
-  "release_seq": 2026082401,
-  "release_date": "2026-08-24",
-  "mandatory": false,
-  "download_url": "",
-  "sha256": "",
-  "release_notes_url": "https://github.com/agebrander-def/CAMT-Updates/blob/main/release-notes/1.1.0-beta1-test-20260824.md",
-  "release_notes": "TEST manifest for CAMT Update Manager. Newer build identity only; no downloadable installer is published.",
-  "signing": {
-    "algorithm": "ed25519",
-    "key_id": "",
-    "signature": ""
-  }
+  "version": "1.1.0 Beta 3",
+  "build": "110B3-RCF-20260826",
+  "download_url": "https://github.com/agebrander-def/CAMT-Updates/releases/download/v1.1.0-beta3/CAMT-1.1.0-Beta3-Core-Update-Setup.exe",
+  "sha256": "4F2B4A9B9D3069FBA9620C13C2C5B95DF91850D6776D6634232BD7DA7F127194",
+  "release_notes": "CAMT 1.1.0 Beta 3 core update test.",
+  "mandatory": false
 }
