@@ -1,26 +1,15 @@
-CAMT MODULE REPOSITORY 1.2 - GITHUB UPLOAD
+CAMT UPDATE MANAGER 1.2.1 — GITHUB UPLOAD
 
-Repository:
+Upload/replace the CONTENTS of this folder in:
 https://github.com/agebrander-def/CAMT-Updates
 
-Upload/replace the CONTENTS of this kit in the repository root:
+Required:
+- replace root modules.json
+- add modules/CAMT_Update_Manager_v1_2_1_Network_Resilience.camtmodule
+- add release-notes/update-manager-1.2.1.md
 
-modules.json
-modules/
-release-notes/
+The other module files are included unchanged so the repository remains complete.
 
-IMPORTANT
-The supplied modules.json deliberately still uses schema CAMT.ModuleUpdateCatalog.1.
-That lets an already installed CAMT Update Manager 1.1.1 see and install its own 1.2.0 update.
-After 1.2.0 is loaded, the same catalog is treated as a full Module Repository and the three modules that are not installed appear under Available.
-
-TEST FLOW
-1. Upload this kit and commit to main.
-2. In existing Update Manager 1.1.1: Module updates -> Check modules.
-3. Update CAMT Update Manager 1.1.1 -> 1.2.0.
-4. Close and reopen CAMT Update Manager.
-5. Open Module Repository.
-6. The three new modules should appear under Available even when no base version is installed.
-7. Install one or more directly from the repository.
-
-No PyInstaller or CAMT.exe rebuild is required.
+After committing to main:
+CAMT Update Manager 1.2.0 -> Module Repository -> Updates -> Refresh repository.
+It should offer 1.2.0 -> 1.2.1.

@@ -1,20 +1,20 @@
 {
   "schema": "CAMT.ModuleUpdateCatalog.1",
   "channel": "Beta",
-  "generated": "2026-08-24T15:08:00+02:00",
+  "generated": "2026-08-25T06:20:00+02:00",
   "repository": "https://github.com/agebrander-def/CAMT-Updates",
   "modules": [
     {
       "package_id": "camt.core.update_manager",
       "name": "CAMT Update Manager",
       "channel": "Beta",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "category": "Core",
-      "description": "CAMT core update manager and Module Repository for discovering, installing, updating and removing CAMT modules.",
-      "download_url": "https://raw.githubusercontent.com/agebrander-def/CAMT-Updates/main/modules/CAMT_Update_Manager_v1_2_0.camtmodule",
-      "sha256": "79c6963bcde14da16fdf83fd88a1f28f18c4a0eccb8f8c3679997e376bc9a7b6",
-      "release_notes_url": "https://github.com/agebrander-def/CAMT-Updates/blob/main/release-notes/update-manager-1.2.0.md",
-      "release_notes": "CAMT Module Repository v1.2: discovers new modules, separates Available/Updates/Installed, supports search, categories, install, update, release notes and remove."
+      "description": "CAMT Update Manager and Module Repository with Network Resilience: requests primary HTTPS, urllib fallback, retries, cache and atomic downloads.",
+      "download_url": "https://raw.githubusercontent.com/agebrander-def/CAMT-Updates/main/modules/CAMT_Update_Manager_v1_2_1_Network_Resilience.camtmodule",
+      "sha256": "461d254c13af180b9af4fcbe39d50a6fb55e0ebc2114e47716db0d04102efcdb",
+      "release_notes_url": "https://github.com/agebrander-def/CAMT-Updates/blob/main/release-notes/update-manager-1.2.1.md",
+      "release_notes": "Network Resilience: requests primary HTTPS, urllib fallback, three retry rounds, short back-off, cached valid update/catalog data, atomic .part downloads and user-friendly handling of temporary connection resets such as WinError 10054."
     },
     {
       "package_id": "camt.evidence.integrity",
